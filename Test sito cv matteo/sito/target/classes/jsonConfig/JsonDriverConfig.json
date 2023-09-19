@@ -1,0 +1,22 @@
+{
+  "drivers": [
+    {
+      "driverType": "edge",
+      "edgeOptions": {
+        "startMaximized": "--start-maximized"
+      }
+    },
+    {
+      "driverType": "chrome",
+      "chromeOptions": {
+        "startMaximized": "--start-maximized"
+      }
+    },
+    {
+      "driverType": "firefox",
+      "firefoxOptions": {
+        "startMaximized": "--start-maximized"
+      }
+    }
+  ]
+}

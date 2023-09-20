@@ -179,6 +179,15 @@ public class DriverUtils {
         }
     }
 
+    public static boolean isElementDisplayed(WebElement element) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+        } catch (NoSuchElementException | StaleElementReferenceException | NullPointerException e) {
+            return false;
+        }
+    }
+
+
     public static String getElementText(By element) {
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(element));
